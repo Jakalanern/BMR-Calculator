@@ -1,0 +1,91 @@
+:root {
+  --clr-black: rgba(0, 0, 0, 0.815);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgb(247, 247, 247);
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3em;
+  width: 100%;
+  height: 100%;
+  padding: 4em;
+  background: rgb(241, 241, 241);
+}
+
+.main-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  border: 1px solid black;
+  padding: 1.5em;
+  border-radius: 0.5em;
+}
+
+h2 {
+  margin-bottom: -1em;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 0.5em;
+}
+
+.form .gender-desc {
+  align-self: center;
+}
+
+.form .bmr-desc {
+  margin-top: 1em;
+  align-self: center;
+  font-weight: 600;
+  font-size: 1.5em;
+}
+
+.form span {
+  align-self: start;
+  font-weight: 600;
+}
+
+.form .gender-select {
+  align-self: center;
+  padding: 0.5rem 0.25rem;
+}
+
+.form input {
+  padding: 0.5rem 0.25rem;
+  width: 100%;
+}
+
+.form button {
+  margin-top: 1em;
+  width: 33%;
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+}
